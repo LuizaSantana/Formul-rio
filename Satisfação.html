@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="Satisfação.css" media="screen">
+    
+    <title>Pesquisa de satisfação</title>
+</head>
+
+<body>
+    <br>
+    <div class="campo">
+        <h1 id="titulo">Formulário de Satisfação</h1>
+        <P id="subtitulo">Preencha as informações</P>
+        <br>
+    </div>
+ 
+    <form>
+       
+        <fieldset class="grupo">
+         <div class="campo">
+             <label for="nome"><strong>Nome</strong></label>
+             <input type="text" name="Nome" id="nome" required>
+         </div>
+
+         <div class="campo">
+             <label for="sobrenome"><strong>Sobrenome</strong></label>
+             <input type="text" name="Sobrenome" id="sobrenome" requiered>
+            </div>
+       </fieldset>
+
+       <fieldset class="grupo">
+         <div class="campo">
+             <label for="email"><strong>Email</strong></label>
+             <input type="email" name="Email" id="email" required>
+         </div>
+
+         <div class="campo">
+            <label for="telefone"><strong>Telefone</strong></label>
+            <input type="telefone" name="telefone" id="telefone" required>
+        </div>
+       </fieldset>
+         <br>
+         <div class="campo">
+             <label><strong>Pensando na empersa, o quão satisfeito você está <br>com os serviços prestados de forma geral?</strong></label>
+             <label>
+                 <input type="radio" name="muitoinsatisfeito" value="muitoinsatisfeito" >Muito insatisfeito
+             </label>
+             
+             <label>
+                 <input type="radio" name="insatisfeito" value="insatisfeito">Insatisfeito
+             </label>
+             
+             <label>
+                <input type="radio" name="indiferente" value="indiferente">Indiferente
+            </label>
+
+             <label>
+                 <input type="radio" name="satisfeito" value="satisfeito">Satisfeito
+             </label>
+             
+             <label>
+                <input type="radio" name="satisfeito" value="plenamente">Plenamente Satisfeito
+            </label>
+         
+        </div>
+
+         <div class="campo">
+             <label for="atendimento"><strong>Em relação ao atendimento, você considera que ele é:</strong></label>
+                <select id="atendimento">
+                     <option selected disabled value="">Selecione</option>
+                     <option>Péssimo</option>
+                     <option>Ruim</option>
+                     <option>Regular</option>
+                     <option>Bom</option>
+                     <option>Ótimo</option>
+                     <option>Não sei avaliar</option>
+                </select>
+         </div>
+
+         <fieldset class="grupo">
+         
+            <br>
+         <div id="check">
+             <label><strong>De zero a dez, quais as chances de você recomendar <br> nossa empresa para um amigo?</strong></label><br><br>
+                 <input type="checkbox" id="chance0" name="chance0" value="zero">
+             <label for="chance0">0</label>
+                 
+                 <input type="checkbox" id="chance1" name="chance1" value="um">
+             <label for="chance1">1</label>
+                 
+                 <input type="checkbox" id="chance2" name="chance2" value="dois">
+             <label for="chance2">2</label>
+
+                 <input type="checkbox" id="chance3" name="chance3" value="tres">
+             <label for="chance3">3</label>
+
+                 <input type="checkbox" id="chance4" name="chance4" value="quatro">
+             <label for="chance4">4</label>
+
+                 <input type="checkbox" id="chance5" name="chance5" value="cinco">
+             <label for="chance5">5</label>
+            
+                 <input type="checkbox" id="chance6" name="chance6" value="seis">
+             <label for="chance6">6</label>
+
+                 <input type="checkbox" id="chance7" name="chance7" value="sete">
+             <label for="chance7">7</label>
+
+                 <input type="checkbox" id="chance8" name="chance8" value="oito">
+             <label for="chance8">8</label>
+
+                 <input type="checkbox" id="chance9" name="chance9" value="nove">
+             <label for="chance9">9</label>
+
+                 <input type="checkbox" id="chance10" name="chance10" value="dez">
+             <label for="chance10">10</label>
+
+         </div>
+         </fieldset>
+         
+         <div class="campo">
+             <br>
+             <label><strong>Conte um pouco da sua experiência:</strong></label>
+             <textarea rows="6" style="width: 26em;" id="experiencia" name="experiencia"></textarea>
+         </div>
+
+         <button type="submit" class="botao">Concluído</button>
+
+    </form>
+
+</body>
+
+</html>
